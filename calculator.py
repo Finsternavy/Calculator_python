@@ -33,12 +33,12 @@ def enterValidNum():
     try: 
         val = int(num)
         print("Input is an integer. Number = ", num)
-        return int(num)
+        return val
     except ValueError:
         try: 
             val = float(num)
             print("Input is a float. Number = ", num)
-            return float(num)   
+            return val  
         except ValueError:
             print("Input was a string = ", num) 
             calculate()
